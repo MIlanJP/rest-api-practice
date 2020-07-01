@@ -1,5 +1,6 @@
 package com.restexample.controller;
 
+import com.restexample.model.User;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -12,7 +13,7 @@ public class UserController {
     }
 
     @PostMapping
-    public String createUser(){
+    public String createUser(@RequestBody User user){
         return "createUser";
     }
 
