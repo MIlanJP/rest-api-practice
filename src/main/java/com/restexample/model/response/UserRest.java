@@ -1,5 +1,8 @@
 package com.restexample.model.response;
 
+import org.springframework.stereotype.Repository;
+
+
 public class UserRest {
     private String userId;
     private String firstName;
